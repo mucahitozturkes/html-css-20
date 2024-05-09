@@ -1,0 +1,318 @@
+/*Rubik*/
+:root {
+    --Pale-Violet-sub-heading-at-the-top-of-the-app-UI: hsl(276, 100%, 81%);
+    --Moderate-Violet-chat-on-the-left: hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet-chat-on-the-right: hsl(271, 15%, 43%);
+    --Grayish-Blue-placeholder-text: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet-main-heading: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet-paragraph: hsl(270, 7%, 64%);
+
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet-app-background: hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet-submit-button-background: hsl(271, 36%, 24%);
+    --Very-Ligh-Magenta-radio-button-outline: hsl(289, 100%, 72%);
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    font-family: Rubik;
+   
+}
+
+.bg {
+    position: absolute;
+    background: linear-gradient(to top, var(--Light-Violet), var(--Very-Ligh-Magenta-radio-button-outline));
+    width: 50%;
+    height: 52%;
+    border-radius: 0px 0px 20rem 0px;
+    z-index: -1;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+}
+
+.bg2 {
+    position: absolute;
+    background: linear-gradient(to top, var(--Light-Violet), var(--Very-Ligh-Magenta-radio-button-outline));
+    width: 50%;
+    height: 52%;
+    border-radius: 20rem 0px 0px 0px;
+    z-index: -1;
+    margin: 0 auto;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*nav*/
+.main_phone {
+    margin: 0 auto;
+    height: 500px;
+    width: 250px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 1px 1px 30px rgba(111, 111, 111, 0.253);
+}
+
+.main_phone_Wrapper {
+    background-color: var(--Light-Grayish-Violet-app-background);
+    height: 480px;
+    width: 230px;
+    border-radius: 1.5rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.main_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_top1 {
+    width: 130px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.main_top2 {
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(to right, var(--Light-Violet), var(--Light-Magenta));
+}
+
+.main_top2_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding-inline: .7rem;
+}
+
+.main_top_left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.profile img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.name {
+    font-size: .6rem;
+    font-weight: 700;
+    color: white;
+}
+
+.status {
+    font-size: .4rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.525);
+}
+
+/*text-boxs*/
+/*stack1*/
+.textbox {
+    display: grid;
+    gap: .7rem;
+}
+
+.textbox_stack1 {
+    width: 55%;
+    padding: .5rem;
+}
+
+.textbox_stack1_wrapper {
+    display: grid;
+    gap: .5rem;
+}
+
+.box1,
+.box2,
+.box6 {
+    color: var(--Moderate-Violet-chat-on-the-left);
+    background-color: hsla(276, 100%, 81%, 0.165);
+    font-size: .5rem;
+    border-radius: 12px 12px 12px 3px;
+    padding-inline: .5rem;
+    padding-block: .2rem;
+    box-shadow: 2px 2px 5px rgba(190, 189, 189, 0.492);
+    line-height: 1.5;
+}
+
+/*stack2*/
+.textbox_stack2 {
+    padding-right: .5rem;
+    display: grid;
+    gap: .5rem;
+}
+
+.box3 {
+    display: flex;
+    gap: .7rem;
+    place-content: end;
+}
+
+.box3 img {
+    border-radius: .4rem;
+    width: 2.4rem;
+}
+
+.box4_5_stack {
+    display: flex;
+    place-content: end;
+}
+
+.box4_5_stack_wrapper {
+    display: grid;
+    gap: .5rem;
+    width: 60%;
+}
+
+.box4,
+.box5 {
+    color: rgba(0, 0, 0, 0.728);
+    background-color: hsl(0, 0%, 100%);
+    font-size: .5rem;
+    border-radius: 12px 12px 3px 12px;
+    padding: .5rem;
+    box-shadow: 2px 2px 5px rgba(190, 189, 189, 0.492);
+    line-height: 1.5;
+}
+
+.box5_container {
+    display: flex;
+    place-content: end;
+}
+
+.box5 {
+    width: 50%;
+}
+
+/*stack3*/
+
+.textbox_stack3 {
+    padding-left: .5rem;
+    display: grid;
+    gap: .5rem;
+
+}
+
+.box6_container {
+    width: 56%;
+}
+
+.box_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px 12px 12px 3px;
+    background: linear-gradient(to right, var(--Light-Magenta), var(--Light-Violet))
+}
+
+
+.info_wrapper {
+    width: 80%;
+    display: grid;
+    gap: .5rem;
+}
+
+.info_stack {
+    display: flex;
+    gap: .4rem;
+    padding: .5rem;
+    align-items: center;
+}
+
+.circle {
+    border: 1px solid white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+}
+
+.text {
+    font-size: .5rem;
+    color: white;
+
+}
+
+.price1 {
+    font-size: .8rem;
+    padding-right: 1rem;
+    color: white;
+}
+
+.bottom_input {
+    width: 100%;
+    padding-top: 1.3rem;
+}
+
+.textfield {
+    display: flex;
+    position: relative;
+    height: 35px;
+    padding-inline: .5rem;
+    
+}
+
+input {
+    border: 0px solid;
+    border-radius: 50px;
+    width: 100%;
+    
+}
+
+::placeholder {
+    padding-left: 1rem;
+    color: rgba(128, 128, 128, 0.364);
+}
+
+.input_button {
+    position: absolute;
+    right: 8px;
+    align-self: center;
+    padding-inline: .6rem;
+}
+
+.input_button i {
+    scale: 1.6;
+}
+
+.bottom_text {
+    width: 300px;
+}
+
+.title{
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-block: 2rem;
+    font-weight: 500;
+}
+
+.body {
+    color: rgba(128, 128, 128, 0.732);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 400;
+}

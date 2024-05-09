@@ -1,0 +1,33 @@
+@media (min-width: 1024px) {
+    body .bg,
+    body .bg2 {
+        width: 36.5%;
+        height: 90%;
+    }
+
+    body .bg {
+        border-radius: 0px 0px 20rem 20rem;
+        left: -4rem;
+    }
+
+    body .bg2 {
+        border-radius: 20rem 0px 0px 0px ;
+        right: -12rem;
+        bottom: 0;
+    }
+
+    .main_container {
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    .text_wrapper {
+        width: 450px;
+    }
+
+    .text_wrapper .title,
+    .text_wrapper .body {
+        text-align: left;
+    }
+}
